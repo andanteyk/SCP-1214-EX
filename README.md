@@ -2,14 +2,14 @@
 
 ## Usage
 
-1. Build with VS2019.
+1. Build with Visual Studio 2019.
 1. Run `seed_generator.exe` to generate `seed.dat`.
 1. Move `seed.dat` to the folder where `random_number_test.exe` resides. 
 1. Run `random_number_test.exe`.
 
 ## How it works
 
-(under construction)
+See https://andantesoft.hatenablog.com/entry/2021/02/23/210224 . (* Japanese)
 
 ## License
 
