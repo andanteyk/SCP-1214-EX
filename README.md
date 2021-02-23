@@ -4,8 +4,8 @@
 
 1. Build with VS2019.
 1. Run `seed_generator.exe` to generate `seed.dat`.
-1. Move `seed.dat` to the folder where `random_number_generator.exe` resides. 
-1. Run `random_number_generator.exe`.
+1. Move `seed.dat` to the folder where `random_number_test.exe` resides. 
+1. Run `random_number_test.exe`.
 
 ## How it works
 

@@ -99,7 +99,7 @@ namespace seed_generator
                     if (rng.NextDouble() < 0.001)
                         character = rng.NextCharacter();
 
-                    if (rng.NextDouble() < 0.1 * phase1 / Phase1Length)
+                    if (rng.NextDouble() < 0.01 * phase1 / Phase1Length)
                     {
                         AddRepeatProgress(character, (double)phase1 / Phase1Length);
                     }
@@ -129,11 +129,11 @@ namespace seed_generator
 
                 for (int phase2 = 0; phase2 < Phase2Length; phase2++)
                 {
-                    if (rng.NextDouble() < LerpClamped(0.1, -0.09, (double)phase2 / Phase2Length - 0.5))
+                    if (rng.NextDouble() < LerpClamped(0.02, 0.08, Math.Sin((double)phase2 / Phase2Length * Math.PI)))
                     {
                         AddString(words[rng.NextInt(words.Length)]);
                     }
-                    else if (rng.NextDouble() < Lerp(0.01, 0.05, (double)phase2 / Phase2Length))
+                    else if (rng.NextDouble() < Lerp(0.001, 0.01, (double)phase2 / Phase2Length))
                     {
                         AddRepeatProgress(rng.NextCharacter(), rng.NextDouble());
                     }
@@ -185,7 +185,7 @@ namespace seed_generator
             }
 
 
-            AddString(":::END:OF:STREAM:::END:OF:STREAM:::THIS:PROGRAM:IS:<SCP=1214=EX>;;;BASED:ON:<SCP=1214>:BY:<DRCARNAGE>:::THIS:PROGRAM:WAS:CREATED:BY:<ANDANTE>:::SEE:HTTPS:==ANDANTESOFT:HATENABLOG:COM=:::END:OF:STREAM:::END:OF:STREAM:::");
+            AddString(":::END:OF:STREAM:::END:OF:STREAM:::THIS:PROGRAM:IS:<SCP=1214=EX>;;;BASED:ON:<SCP=1214>:BY:<DRCARNAGE>:::THIS:PROGRAM:WAS:CREATED:BY:<ANDANTE>:::SEE:@ANDANTEYK:::END:OF:STREAM:::END:OF:STREAM:::");
             Flush();
 
 
