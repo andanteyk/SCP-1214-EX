@@ -1,5 +1,7 @@
 # SCP-1214-EX - Implementation of SCP-1214
 
+![Phase 2](https://cdn-ak.f.st-hatena.com/images/fotolife/a/andantesoft/20210223/20210223200619.gif)
+
 ## Usage
 
 1. Build with Visual Studio 2019.
